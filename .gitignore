@@ -1,0 +1,37 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyz
+
+# Virtual Environments
+venv/
+env/
+*.env
+
+# JMeter
+.jmx
+
+# Visual Studio Code
+.vscode/
+
+# Compiled Files
+*.exe
+
+# Logs and Temporary Files
+*.log
+*.tmp
+
+# IDE settings
+*.code-workspace
+.vs/
+
+# Dependency directories
+node_modules/
+
+# Exclude sensitive or environment-specific information
+*.env
+
+#HTML report
+report.html
