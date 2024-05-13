@@ -37,4 +37,4 @@ node_modules/
 report.html
 
 #allure-report
-allure-report/
+allure-report*

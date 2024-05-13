@@ -47,7 +47,7 @@ This test automation project aims to provide a robust and scalable solution for 
     pytest --html=report.html tests/
     ```
 
-    This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results.
+    This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results. This is a simple report that don't need the use of external installations.
 
 3. Run the test suite with Allure report:
 
@@ -62,12 +62,14 @@ This test automation project aims to provide a robust and scalable solution for 
     ```
 
     This will open a web browser with the generated Allure report, showing detailed information about the test execution.
+    This is a more complete report, that will need to have allure installed in order to open it.
 
 4. View the test results in the chosen report format.
 
 ## Project Structure
 
 - **tests/**: Directory containing test scripts.
+    - **test_todos.py**: Test script for GET operation on todos.
     - **test_users_CRUD.py**: Test script for CRUD operations on users.
 - **utils/**: Directory containing utility functions.
     - **api_requests.py**: Module for making API requests.

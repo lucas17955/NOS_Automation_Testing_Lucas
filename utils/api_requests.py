@@ -34,3 +34,12 @@ def delete_user(user_id):
         "Accept": "application/json"
     }
     return requests.delete(url, headers=headers)
+
+def get_todos():
+    url = f"{BASE_URL}/todos"
+    headers = {
+        "Authorization": f"Bearer {AUTH_TOKEN}",
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }
+    return requests.get(url, headers=headers)
