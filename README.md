@@ -41,13 +41,29 @@ This test automation project aims to provide a robust and scalable solution for 
     cd rest_api_test_automation_project
     ```
 
-2. Run the test suite:
+2. Run the test suite with HTML report:
 
     ```bash
-    pytest -s tests/test_users_CRUD.py
+    pytest --html=report.html tests/
     ```
 
-3. View the test results in the terminal.
+    This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results.
+
+3. Run the test suite with Allure report:
+
+    ```bash
+    pytest --alluredir=allure-report tests/
+    ```
+
+    After running the tests, you can generate the Allure report by executing the following command:
+
+    ```bash
+    allure serve allure-report
+    ```
+
+    This will open a web browser with the generated Allure report, showing detailed information about the test execution.
+
+4. View the test results in the chosen report format.
 
 ## Project Structure
 

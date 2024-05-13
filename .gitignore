@@ -35,3 +35,6 @@ node_modules/
 
 #HTML report
 report.html
+
+#allure-report
+allure-report/
