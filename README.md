@@ -4,7 +4,7 @@ This project provides a framework for automating tests for a REST API using Pyth
 
 ## Overview
 
-This project includes test cases for performing CRUD (Create, Read, Update, Delete) operations on a sample REST API. It demonstrates how to use Python and the `requests` library to interact with the API endpoints, as well as how to organize test cases and utility functions for better maintainability and scalability.
+This test automation project aims to provide a robust and scalable solution for testing a REST API. It includes test cases for performing CRUD (Create, Read, Update, Delete) operations on a sample REST API. The project demonstrates how to use Python and the `requests` library to interact with the API endpoints, as well as how to organize test cases and utility functions for better maintainability and scalability.
 
 ## Features
 
@@ -21,7 +21,13 @@ This project includes test cases for performing CRUD (Create, Read, Update, Dele
     git clone <repository-url>
     ```
 
-2. Install dependencies:
+2. Navigate to the project directory:
+
+    ```bash
+    cd rest_api_test_automation_project
+    ```
+
+3. Install dependencies:
 
     ```bash
     pip install -r requirements.txt
@@ -43,9 +49,20 @@ This project includes test cases for performing CRUD (Create, Read, Update, Dele
 
 3. View the test results in the terminal.
 
+## Project Structure
+
+- **tests/**: Directory containing test scripts.
+    - **test_users_CRUD.py**: Test script for CRUD operations on users.
+- **utils/**: Directory containing utility functions.
+    - **api_requests.py**: Module for making API requests.
+    - **config.py**: Configuration settings for the project.
+- **requirements.txt**: File listing the project dependencies.
+- **README.md**: Markdown file containing project documentation.
+- **.gitignore**: File specifying which files and directories to ignore in version control.
+
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-name`).
