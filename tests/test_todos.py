@@ -2,6 +2,8 @@ import jsonschema #this library is to validate the schema
 import pytest #this library is for tests in python
 import allure #for report
 from utils.api_requests import get_todos
+from utils.response_validator import validate_response_schema # fuction to validate schema
+from utils.allure_helper import attach_response_data #function to attach the response to the allure report
 
 @pytest.fixture(scope="module")
 def setup():
@@ -14,7 +16,7 @@ def test_get_todos(setup):
         response = get_todos()
 
         # Attach the response data to the test step
-        allure.attach(response.text, name="Response Data", attachment_type=allure.attachment_type.TEXT)
+        attach_response_data(response)
 
     with allure.step("Verify response status code"):
         assert response.status_code == 200
@@ -37,4 +39,4 @@ def test_get_todos(setup):
         }
 
         # Validate the response against the expected schema
-        jsonschema.validate(response.json(), expected_schema)
+        validate_response_schema(response, expected_schema)
