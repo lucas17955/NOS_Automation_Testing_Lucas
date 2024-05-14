@@ -7,9 +7,9 @@ from utils.allure_helper import attach_response_data #function to attach the res
 
 @pytest.fixture(scope="module")
 def setup():
-    # Setup code if needed
+    # Setup code 
     yield
-    # Teardown code if needed
+    # Teardown code 
 
 def test_get_todos(setup):
     with allure.step("Send GET request to retrieve todos"):
@@ -40,3 +40,11 @@ def test_get_todos(setup):
 
         # Validate the response against the expected schema
         validate_response_schema(response, expected_schema)
+
+        with allure.step("Verify all status fields are 'completed'"):
+        # Get the JSON response data
+            response_data = response.json()
+
+        # Check if all status fields are 'completed'
+            for item in response_data:
+                assert item['status'] == 'completed'
