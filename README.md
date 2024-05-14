@@ -35,7 +35,8 @@ This test automation project aims to provide a robust and scalable solution for 
 
 4.You will have to get a new token to make the resquests here:
 https://gorest.co.in/
-Get a new token and put it on config.py file
+
+Get a new token and put it on config.py file.
 Do it also for jmeter project.
 
 5. (Optional) Install Allure:
