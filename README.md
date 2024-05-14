@@ -81,7 +81,7 @@ This project includes a Python script to automate the execution of JMeter tests 
     - `jmeter/configs/jmeter.properties`
     - `jmeter/results/` (will be created if it doesn't exist)
 
-### Running the JMeter Test Plan
+## Running the JMeter Test Plan
 
 1. Navigate to the `jmeter/tests` directory.
 2. Run the Python script to execute the JMeter test plan and generate the HTML report:
@@ -89,7 +89,7 @@ This project includes a Python script to automate the execution of JMeter tests 
    ```bash
    python run_jmeter_tests.py
 
-## Output Location
+### Output Location
 The script will save the JTL (JMeter Test Log) output file to the results directory inside the jmeter folder. The file name will include a timestamp to ensure uniqueness.
 
 The HTML report will also be generated in the results directory inside a folder named html_report_<timestamp>.
