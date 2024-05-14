@@ -13,7 +13,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="auth_token" elementType="Argument">
             <stringProp name="Argument.name">auth_token</stringProp>
-            <stringProp name="Argument.value">48d275637be22d96c6f89c0bd8ab625bf2d3a63aa0ee4dd827374f714f013fb9</stringProp>
+            <stringProp name="Argument.value">{auth-token}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="url" elementType="Argument">
