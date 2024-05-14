@@ -44,7 +44,7 @@ This test automation project aims to provide a robust and scalable solution for 
 2. Run the test suite with HTML report:
 
     ```bash
-    pytest --html=report.html tests/
+    pytest --html=report.html tests/<testfile>.py
     ```
 
     This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results. This is a simple report that don't need the use of external installations.
@@ -52,7 +52,7 @@ This test automation project aims to provide a robust and scalable solution for 
 3. Run the test suite with Allure report:
 
     ```bash
-    pytest --alluredir=allure-report tests/
+    pytest --alluredir=allure-report tests/<testfile>.py
     ```
 
     After running the tests, you can generate the Allure report by executing the following command:
