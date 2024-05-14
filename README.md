@@ -33,7 +33,10 @@ This test automation project aims to provide a robust and scalable solution for 
     pip install -r requirements.txt
     ```
 
-## Usage
+4. Install Allure:
+    Follow this link https://allurereport.org/docs/install/ 
+
+## Usage 
 
 1. Navigate to the project directory:
 
@@ -65,6 +68,16 @@ This test automation project aims to provide a robust and scalable solution for 
     This is a more complete report, that will need to have allure installed in order to open it.
 
 4. View the test results in the chosen report format.
+
+# Jmeter usage
+
+1. Run jmeter from command:
+
+jmeter -n -t <sample_test_plan>.jmx -l jmeter.log 
+
+# Future improvements
+
+ - Automating jmeter tests
 
 ## Project Structure
 
