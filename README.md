@@ -8,10 +8,10 @@ This test automation project aims to provide a robust and scalable solution for 
 
 ## Features
 
-- **CRUD Operations**: Test cases are provided for creating, reading, updating, and deleting resources (users) using the REST API.
-- **Modular Structure**: The project is organized into separate modules for tests and utility functions, making it easier to manage and extend.
-- **Dynamic Data Generation**: Random data generation is implemented for creating test data, ensuring test independence and repeatability.
-- **Response Logging**: Responses from API requests are logged, providing visibility into the interactions with the API endpoints.
+- **Automated testing of REST APIs**
+- **Validation of response schemas**
+- **Modular and reusable test components**
+- **Support for multiple test report formats**
 
 ## Installation
 
