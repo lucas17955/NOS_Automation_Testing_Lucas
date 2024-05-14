@@ -11,7 +11,8 @@ env/
 *.env
 
 # JMeter
-.jmx
+.jtl
+.csv
 
 # Visual Studio Code
 .vscode/
