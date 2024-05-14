@@ -33,13 +33,13 @@ This test automation project aims to provide a robust and scalable solution for 
     pip install -r requirements.txt
     ```
 
-4.You will have to get a new token to make the resquests here:
+ 4. You will have to get a new token to make the resquests here:
 https://gorest.co.in/
 
-Get a new token and put it on config.py file.
-Do it also for jmeter project.
+ Get a new token and put it on config.py file.
+ Do it also for jmeter project.
 
-5. (Optional) Install Allure:
+ 5. (Optional) Install Allure:
     Follow this link https://allurereport.org/docs/install/ 
 
 ## Usage 
