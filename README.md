@@ -69,15 +69,36 @@ This test automation project aims to provide a robust and scalable solution for 
 
 4. View the test results in the chosen report format.
 
-# Jmeter usage
+## Running JMeter Tests with Python
 
-1. Run jmeter from command:
+This project includes a Python script to automate the execution of JMeter tests and generate HTML reports.
 
-jmeter -n -t <sample_test_plan>.jmx -l jmeter.log 
+### Prerequisites
 
-# Future improvements
+1. Ensure you have the Apache JMeter binaries placed in the `apache-jmeter` directory inside your project folder.
+2. Ensure the following files and directories exist:
+    - `jmeter/projects/get_user_stress_test.jmx`
+    - `jmeter/configs/jmeter.properties`
+    - `jmeter/results/` (will be created if it doesn't exist)
 
- - Automating jmeter tests
+### Running the JMeter Test Plan
+
+1. Navigate to the `jmeter/tests` directory.
+2. Run the Python script to execute the JMeter test plan and generate the HTML report:
+
+   ```bash
+   python run_jmeter_tests.py
+
+## Output Location
+The script will save the JTL (JMeter Test Log) output file to the results directory inside the jmeter folder. The file name will include a timestamp to ensure uniqueness.
+
+The HTML report will also be generated in the results directory inside a folder named html_report_<timestamp>.
+
+For example:
+
+JTL output file: results_20240514_153045.jtl
+HTML report directory: html_report_20240514_153045
+Open the index.html file inside the HTML report directory to view the detailed test results.
 
 ## Project Structure
 
