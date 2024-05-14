@@ -24,7 +24,7 @@ This test automation project aims to provide a robust and scalable solution for 
 2. Navigate to the project directory:
 
     ```bash
-    cd rest_api_test_automation_project
+    cd NOS_Automation_Testing_Lucas
     ```
 
 3. Install dependencies:
@@ -38,7 +38,7 @@ This test automation project aims to provide a robust and scalable solution for 
 1. Navigate to the project directory:
 
     ```bash
-    cd rest_api_test_automation_project
+    cd NOS_Automation_Testing_Lucas
     ```
 
 2. Run the test suite with HTML report:
