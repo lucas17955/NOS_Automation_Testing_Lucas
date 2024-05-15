@@ -63,7 +63,9 @@ This test automation project aims to provide a robust and scalable solution for 
 
     This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results. This is a simple report that don't need the use of external installations.
 
-3. Run the test suite with Allure report:
+OR
+
+    Run the test suite with Allure report:
 
     ```bash
     pytest --alluredir=allure-report tests/<testfile>.py
@@ -78,7 +80,7 @@ This test automation project aims to provide a robust and scalable solution for 
     This will open a web browser with the generated Allure report, showing detailed information about the test execution.
     This is a more complete report, that will need to have allure installed in order to open it.
 
-4. View the test results in the chosen report format.
+3. View the test results in the chosen report format.
 
 ## Running JMeter Tests with Python
 
