@@ -1,6 +1,29 @@
 import os
 import subprocess
 from datetime import datetime
+import sys
+
+# Ensure the current working directory is in the system path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.dirname(os.path.dirname(current_dir))
+sys.path.insert(0, project_dir)
+
+import utils.config as config
+
+def replace_auth_token_in_jmx(jmx_path, token):
+    # Read the JMX file
+    with open(jmx_path, 'r', encoding='utf-8') as file:
+        jmx_content = file.read()
+    
+    # Replace the AUTH_TOKEN placeholder
+    jmx_content = jmx_content.replace('AUTH_TOKEN', token)
+    
+    # Write the modified content to a new file
+    modified_jmx_path = jmx_path.replace('.jmx', '_modified.jmx')
+    with open(modified_jmx_path, 'w', encoding='utf-8') as file:
+        file.write(jmx_content)
+    
+    return modified_jmx_path
 
 def run_jmeter_test():
     # Define the paths
@@ -38,11 +61,14 @@ def run_jmeter_test():
     if not os.path.exists(properties_file):
         raise FileNotFoundError(f'Properties file not found at {properties_file}')
     
+    # Replace the AUTH_TOKEN placeholder in the JMX file
+    modified_test_plan = replace_auth_token_in_jmx(test_plan, config.AUTH_TOKEN)
+    
     # Build the JMeter command
     cmd = [
         jmeter_bin,
         '-n',  # Non-GUI mode
-        '-t', test_plan,  # Test plan
+        '-t', modified_test_plan,  # Test plan
         '-l', output_jtl_path,  # JTL output file
         '-j', log_file,  # Log file
         '-p', properties_file,  # JMeter properties

@@ -33,14 +33,19 @@ This test automation project aims to provide a robust and scalable solution for 
     pip install -r requirements.txt
     ```
 
- 4. You will have to get a new token to make the resquests here:
-https://gorest.co.in/
-
- Get a new token and put it on config.py file.
- Do it also for jmeter project.
-
- 5. (Optional) Install Allure:
+4. (Optional) Install Allure:
     Follow this link https://allurereport.org/docs/install/ 
+
+### Configuration
+
+    Update the `utils/config.py` file with your base URL and authorization token:
+
+    ```python
+    BASE_URL = "https://gorest.co.in/public/v2"
+    AUTH_TOKEN = "your_auth_token_here"
+    ```
+
+    Get your token from https://gorest.co.in
 
 ## Usage 
 

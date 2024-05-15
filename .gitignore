@@ -11,7 +11,7 @@ env/
 *.env
 
 # JMeter
-.jtl
+*.jtl
 .csv
 jmeter/results/
 jmeter.log
