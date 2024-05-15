@@ -61,24 +61,24 @@ This test automation project aims to provide a robust and scalable solution for 
     pytest --html=report.html tests/<testfile>.py
     ```
 
-    This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results. This is a simple report that don't need the use of external installations.
+  This will generate an HTML report named `report.html` in the project directory. You can open this file in a web browser to view the test results. This is a simple report that don't need the use of external installations.
 
 OR
 
-    Run the test suite with Allure report:
+Run the test suite with Allure report:
 
-    ```bash
+   ```bash
     pytest --alluredir=allure-report tests/<testfile>.py
-    ```
+   ```
 
-    After running the tests, you can generate the Allure report by executing the following command:
+  After running the tests, you can generate the Allure report by executing the following command:
 
-    ```bash
+   ```bash
     allure serve allure-report
-    ```
+   ```
 
-    This will open a web browser with the generated Allure report, showing detailed information about the test execution.
-    This is a more complete report, that will need to have allure installed in order to open it.
+  This will open a web browser with the generated Allure report, showing detailed information about the test execution.
+  Allure is a more complete user friendly report, that will need to have allure installed in order to open it.
 
 3. View the test results in the chosen report format.
 
