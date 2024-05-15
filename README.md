@@ -38,14 +38,14 @@ This test automation project aims to provide a robust and scalable solution for 
 
 ### Configuration
 
-    Update the `utils/config.py` file with your base URL and authorization token:
+Update the `utils/config.py` file with your base URL and authorization token:
 
-    ```python
+   ```python
     BASE_URL = "https://gorest.co.in/public/v2"
     AUTH_TOKEN = "your_auth_token_here"
-    ```
+   ```
 
-    Get your token from https://gorest.co.in
+   Get your token from https://gorest.co.in
 
 ## Usage 
 
