@@ -112,8 +112,12 @@ HTML report directory: html_report_20240514_153045
 Open the index.html file inside the HTML report directory to view the detailed test results.
 
 ## Project Structure
-
-- **tests/**: Directory containing test scripts.
+- **jmeter/**: Directory containing jmeter test scripts
+    - **apache-jmeter-5.6.3** : Apache jmeter executable
+    - **configs**: Directory containing configuration for jmeter
+    - **projects**: Directory containing jmeter projects
+    - **tests/**: Directory containing jmeter automation scripts.
+- **tests/**: Directory containing functional test scripts.
     - **test_todos.py**: Test script for GET operation on todos.
     - **test_users_CRUD.py**: Test script for CRUD operations on users.
 - **utils/**: Directory containing utility functions.
