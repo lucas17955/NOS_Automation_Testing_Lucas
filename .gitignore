@@ -16,6 +16,7 @@ env/
 jmeter/results/
 jmeter.log
 jmeter/apache-jmeter-5.6.3/backups/*
+*_modified.jmx
 
 # Visual Studio Code
 .vscode/
